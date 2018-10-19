@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Continents</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+    <style>
+      body{
+        padding-top: 50px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixes-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="~navbar" aria-expanded="false"
+        aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Big Cats</a>
+        </div>
+           <div id="navbar" class="collapse navbar-collapse">
+           <ul class="nav navbar-nav">
+             <li><a href="/">Home Page</a></li>
+             <li class="active"><a href="Continents">Continents</a></li>
+             <li><a href ="africa">Africa</a></li>
+             <li><a href ="asia">Asia</a></li>
+             <li><a href ="america">America</a><li>
+           </ul>
+           </div>
+         </div>
+       </nav>
+
+        <div class="container">
+             <h1>Continents</h1>
+             <p class="lead">This is the continents page where you can access pages on Africa, Asia and America and find information on their resident cats.</p>
+             <p class="lead">Use the navigational bar at the top of the command buttons to access the pages.</p>
+             <p class="lead">Use the navigational bar at the top of the command buttons to access the pages.</p>
+             <p class="lead">Visit Africa: African Lion, Cheetah and African Leopard.</p>
+             <p><a href="africa" class="btn btn-primary" clor=#fc9f41; role="button">Visit Africa</a></p>
+             <p class="lead">Visit Asia: Tiger, Leopard, Asiatic Lion and Snow Leopard</p>
+             <p><a href="asia" class="btn btn-primary" color=#fc9f41; role="button">Visit Asia</a></p>
+             <p class="lead">Visit America: Jaguar and Puma</p>
+             <p><a href="america" class="btn btn-primary" color=#fc9f41; role="button">Visit America</a></p>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>America</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+    <style>
+      body{
+        padding-top: 50px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixes-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="~navbar" aria-expanded="false"
+        aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Big Cats</a>
+        </div>
+           <div id="navbar" class="collapse navbar-collapse">
+           <ul class="nav navbar-nav">
+             <li><a href="/">Home Page</a></li>
+             <li><a href="africa">Africa</a></li>
+             <li><a href="asia">Asia</a></li>
+             <li class="active"><a href="Continents/america">America</a></li>
+            </ul>
+            </div>
+         </div>
+       </nav>
+
+        <div class="container">
+             <h1>Big Cats of America</h1>
+             <p class="lead">Only 2 of the 7 big cats live in Americaa, and they inhabit the  North, South and Central.</p>
+             <h2>The Jaguar (Panhera Onca)</h2>
+             <p class="lead">The Jaguar is the third largest cat but it actually has the strongets bite of them all.</p>
+             <p class="lead">Main Characteristics: They have a body length 3.5 - 6.25 feet long and can weigh up to 160 kgs.
+                             Unlike most cats, the Jaguar absolutely loves the water and will go both swimming and hunting in it. They are also great climbers.                                                         Like Leopards, Jaguars can be born with black fur and are called "Black Panthers".</p>
+             <p class="lead">Habitat: Jaguars live in rainforetss, swamps and grasslands of South and Central America. There have been rare sightnings in  Arizona of North America.</p>
+             <p class="lead">Diet: Jaguars are South America's top predator and prey on Capybaras, Deer, Tapirs, Peccary, Turtles, Caiman, Fish, Anteaters and even the giant snake                                     Anaconda.</p>
+             <p class="lead">Rivals an Predators: Only Humans are a threat to Jaguars due to poaching and the destruction oif their rainforest habitat to make way for farming land.                                    They are also killed for preying on livestock.</p>
+
+        </div>
+        
+        <div class="container">
+             <h3>The Puma (Puma Concolors)</h3>
+             <p class="lead">The Puma is the wispread of the 2 American big cats and the best jumper of all the cats.</p>
+             <p class="lead">Main Characteristics: They have a body length of 5 - 8 feet long and weigh up to 72 kgs.
+                             Pumas are also known as "Cougars", "Mountain Lions" and "Florida Panthers".
+                             Their slender bodies and strong musclar limbs enable them to make leapd 15 feet wide</p>
+             <p class="lead">Habitat: Pumas have the largest range of any big cat extending from mountain regins on Canada to rainforest in South America.</p>
+             <p class="lead">Diet: Pumas will prey on anything including Deer, Elk, Moose, Mountain Goats, Monkeys, Porcupines, Guanacos and maybe even ungarded Bear cubs and                                          Wolf pups</p>
+             <p class="lead">Rivals and Predators: Pumas face lot of competition from Bears, Wolves and Wolverines in North America. Bears and Wolves will kill and eat Pumas,                                          but Humans are their greatest threat, espeically due to attacks on Livestock.</p>
+      
+        </div>
+            
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>
+
