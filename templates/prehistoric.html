@@ -1,0 +1,65 @@
+<html>
+<head>
+    <title>Big Cats of the World</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+    <style>
+      body{
+        padding-top: 50px;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixes-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed"
+        data-toggle="collapse" data-target="~navbar" aria-expanded="false"
+        aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Big Cats</a>
+        </div>
+           <div id="navbar" class="collapse navbar-collapse">
+           <ul class="nav navbar-nav">
+             <li><a href="active"><a href="/">Home Page</a></li>
+             <li><a href="{{ url_for('continent', name='continents') }}">Continents</a></li> 
+             <li class="active"><a href="prehistoric">Prehistoric Cats</a></li>
+           </ul>
+           </div>
+         </div>
+       </nav>
+
+        <div class="container">
+             <h1>Big Cats of the Past</h1>
+             <p class="lead">Long before current time, there were big cats that lived in prehtoric times alongside other prehistoric mammals like Woolly Mammoths and                                               early humans. They have of course disappeared into extinction, but the discovery of fossils has enabled us to learn about them.</p>
+             <p class="lead">Here are some of the most well known prehistoric big cats that once roamed this planet.</p>
+             <h2>Smilodon</h2>
+             <p class="lead">Smilodon was 1 of the most famous prehistoric mammals and the best known of the "Sabre-Tooth Cats".</p>
+             <p class="lead">They lived in both North and South America during the Pleistocene Era (10,000 years ago) and were believed to have lived in "Prides" like                                              modern day Lions.
+             <p class="lead">Like other Sabre-Tooth Cats, Smilodon was equipped with 2 long slender canine teeth that with 1 single bite, would kill their prey.</p>
+             <p class="lead">Smilodon preyed on large herbivores including Mammoths, Macrauchenia, Toxodon, Bison, Camelops (Giant Camels) and Giant Ground Sloths.</p>
+             <p class="lead">They became extinct due to the large herbivores they preyed on vanishing  due to climate change, as well as comeptiton with early Humans.</p> 
+             <h2>American Lion</h2>
+             <p class="lead">American Lions were gigantic compared to modern day Lions, scientists believe they were 25% larger.</p>
+             <p class="lead">They lives in Prides in North America during the Pleistocene Era and were bleieved to be 1 of the top predator's as it was bigger then Smilodon.</p>
+             <p class="lead">Their favourite prey appeared to be Bison along with ealry Horses, Cameelops, large Deer and Mammoths. It was heavily involved in competition with                                     the giant Short-Faced Bear (larger than modern day Polar Bears).</p>
+             <p class="lead">American Lions became extinct along woith Mammoths and other Ice Age mammals as early humans arrived and took their place as the top predator.</p>
+             <h2>Dinofelis</h2>
+             <p class="lead">Dinofelis were similar to modern day Leopard (although much larger) and were widespread across Africa, Asia and Europe</p>
+             <p class="lead">They were solitary cats like Leopards and lived during the Pliocene and Pleistocene Eras in all sorts of habitats</p>
+             <p class="lead">Its believed by scientists that Dinofelis was the main predator of Australopithecus (1 of our earliest ansestors) and also preyed on early                                             Baboons and Antelope.</p>
+             <p class="lead">Its thought that Dinofelis was driven to extinction by climate change at the start of the Ice Age.</p>  
+             <h2>Wanhsien Tiger</h2>
+             <p class="lead">This giant Tiger was larger than even modern day Tigers and lived in habitats similar to that of the Siberian</p>
+             <p class="lead">They lived in Asia during the Pliocene and early Pleistocene.
+             <p class="lead">Its beleievd they preyed on large mammals including Deer, Chalicotheres and even the giant ape Gigantopithecus</p>
+             <p class="lead">They were driven to extinction when new species of Tiger appeared and took over.</p>  
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -10,6 +10,9 @@ def continent(name):
     #return name
 	return render_template(name+'.html')
 
+@app.route('/prehistoric')
+def prehistoric():
+    return render_template('prehistoric.html')
+
 if __name__ == ("__main__"):
     app.run(host='0.0.0.0', debug=True)
-
